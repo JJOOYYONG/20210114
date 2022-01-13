@@ -1,0 +1,55 @@
+.face{
+    width: 100%;
+    height: 800px;
+    background-color: darkblue;
+}
+.eyes{
+    position: absolute;
+    display: flex;
+    top: 72px;
+    left: 30%;
+}
+
+.eye{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 50%;
+    transform: scaleX(0.9);/*정원을 타원으로 만듬*/
+}
+.eye_1{
+    left: -10px;
+}
+.eye_2{
+    left: 0px;
+}
+.pupil{
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    width: 44px;
+    height: inherit;
+}
+.pupil::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #333;
+}
+.pupil::after{
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
